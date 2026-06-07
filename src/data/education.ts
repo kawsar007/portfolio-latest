@@ -159,20 +159,20 @@ export const education: Education[] = [
   // ---------------------------------------------------------------------------
   {
     id: 'edu-1',
-    degree: 'Master of Science',
+    degree: 'BSc. in Computer Science & Engineering',
     field: 'Computer Science',
-    school: 'Stanford University',
+    school: 'University of Development Alternative (UODA)',
     // schoolLogo: '/logos/stanford.png',  // Uncomment if you have a logo
-    location: 'Stanford, CA',
-    startYear: 2014,
-    endYear: 2016,
-    gpa: '3.9/4.0',
-    honors: ['Magna Cum Laude', "Dean's List"],
-    relevantCourses: [
-      'Distributed Systems',
-      'Machine Learning',
-      'Advanced Algorithms',
-    ],
+    location: 'Dhanmondi, Dhaka',
+    startYear: 2017,
+    endYear: 2020,
+    // gpa: '3.9/4.0',
+    // honors: ['Magna Cum Laude', "Dean's List"],
+    // relevantCourses: [
+    //   'Distributed Systems',
+    //   'Machine Learning',
+    //   'Advanced Algorithms',
+    // ],
   },
 
   // ---------------------------------------------------------------------------
@@ -180,19 +180,19 @@ export const education: Education[] = [
   // ---------------------------------------------------------------------------
   {
     id: 'edu-2',
-    degree: 'Bachelor of Science',
-    field: 'Computer Engineering',
-    school: 'UC Berkeley',
-    location: 'Berkeley, CA',
-    startYear: 2010,
-    endYear: 2014,
-    gpa: '3.7/4.0',
-    honors: ['Cum Laude'],
-    relevantCourses: [
-      'Data Structures',
-      'Operating Systems',
-      'Computer Networks',
-    ],
+    degree: 'Higher Secondary Certificate (HSC)',
+    field: 'Science',
+    school: 'Bajitpur Govt College',
+    location: 'Bajitpur, Kishoreganj',
+    startYear: 2014,
+    endYear: 2016,
+    // gpa: '3.7/4.0',
+    // honors: ['Cum Laude'],
+    // relevantCourses: [
+    //   'Data Structures',
+    //   'Operating Systems',
+    //   'Computer Networks',
+    // ],
   },
 
   // ---------------------------------------------------------------------------

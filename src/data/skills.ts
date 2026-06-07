@@ -257,9 +257,8 @@ export const skills: Skill[] = [
  * List the languages you speak and your proficiency level.
  */
 export const languages: Language[] = [
-  { name: 'English', level: 'Native' },
-  { name: 'Spanish', level: 'Professional' },
-  { name: 'French', level: 'Basic' },
+  { name: 'Bangla', level: 'Native' },
+  { name: 'English', level: 'Professional' },
   // Add more languages here:
   // { name: 'German', level: 'Intermediate' },
 ];
