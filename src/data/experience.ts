@@ -122,29 +122,32 @@ export const experience: Experience[] = [
   {
     id: 'exp-1',
     title: 'Senior Software Engineer',
-    company: 'TechCorp Inc.',
+    company: 'Fleet MTS',
     // companyLogo: '/logos/techcorp.png',  // Uncomment and add logo if you have one
-    location: 'San Francisco, CA',
+    location: 'Remote',
     type: 'full-time',
-    startDate: '2022-01',
+    startDate: '2026-03',
     // endDate: undefined,  // Omit or undefined for current position
     current: true,
     description:
-      'Lead development of customer-facing web applications and mentor junior developers.',
+      'Developed a role-based Vehicle Tracking System (VTS) that enables real-time monitoring and management of vehicles. The system supports multiple user roles, including Admin, Manager, and Owner, and provides live tracking, detailed analytics, real-time notifications, and a comprehensive admin panel for efficient fleet management.',
     achievements: [
-      'Architected microservices platform handling 10M+ requests/day',
-      'Reduced deployment time by 80% through CI/CD improvements',
-      'Mentored 3 junior developers to mid-level positions',
-      'Led migration from monolith to microservices architecture',
+      'Role-based access management (Admin, Manager, Owner, etc.) with customizable permissions and secure user control.',
+      'Real-time live vehicle location tracking with accurate GPS monitoring and instant map updates.',
+      'Individual vehicle tracking and follow mode for continuous monitoring of specific vehicles.',
+      'Real-time notification and alert system for overspeeding, geofence violations, ignition status, and critical events.',
+      'Centralized Admin Panel for efficient system configuration, user management, role assignment, and operational control.',
+      'Comprehensive vehicle reporting, including trip history, distance traveled, fuel usage, idle time, and performance analytics.'
     ],
     technologies: [
       'React',
-      'TypeScript',
+      'Javascript',
+      'Tailwind CSS',
       'Node.js',
-      'PostgreSQL',
-      'AWS',
+      'Express',
+      'MySQL',
+      'Prisma ORM',
       'Docker',
-      'Kubernetes',
     ],
   },
 
@@ -153,20 +156,35 @@ export const experience: Experience[] = [
   // ---------------------------------------------------------------------------
   {
     id: 'exp-2',
-    title: 'Software Engineer',
-    company: 'StartupXYZ',
-    location: 'San Francisco, CA',
+    title: 'Software Engineer I',
+    company: 'Teton Private Ltd.',
+    location: 'Tropical Molla Tower, 15/4 Bir Uttam Rafiqul Islam Ave, Dhaka 1212',
     type: 'full-time',
-    startDate: '2019-03',
-    endDate: '2021-12',
+    startDate: '2022-01',
+    endDate: '2026-02',
     current: false,
     description: 'Full-stack development for a fast-growing SaaS platform.',
     achievements: [
-      'Built real-time collaboration features used by 50K+ users',
-      'Implemented automated testing reducing bugs by 40%',
-      'Optimized database queries improving response time by 60%',
+      'Design, develop, and maintain scalable web applications using React, Next.js, TypeScript, Redux, and RTK Query.',
+      'Lead frontend development for the Medser healthcare platform, a real-time solution supporting medical scribing, virtual assistance, and remote patient monitoring.',
+      'Lead the frontend development of the Teton ECG Admin and Organization portals, ensuring a scalable and user-friendly interface.',
+      'Implemented real-time features using socket-based communication for live interactions and notifications.',
+      'Contributed to backend development using Node.js, Express, NestJS, MongoDB, Prisma ORM, and Docker.',
+      'Actively participated in code reviews, architecture discussions, and cross-team collaboration.'
     ],
-    technologies: ['React', 'Python', 'Django', 'PostgreSQL', 'Redis', 'AWS'],
+    technologies: [
+      'React',
+      'Next.js',
+      'TypeScript',
+      'Redux',
+      'RTK Query',
+      'Node.js',
+      'Express',
+      'NestJS',
+      'MongoDB',
+      'Prisma ORM',
+      'Docker',
+    ],
   },
 
   // ---------------------------------------------------------------------------
@@ -174,21 +192,20 @@ export const experience: Experience[] = [
   // ---------------------------------------------------------------------------
   {
     id: 'exp-3',
-    title: 'Junior Developer',
-    company: 'WebAgency Co.',
-    location: 'Los Angeles, CA',
+    title: 'React Intern Developer',
+    company: 'Akij House',
+    location: '198 Bir Uttam Mir Shawkat Sarak, Dhaka 1208',
     type: 'full-time',
-    startDate: '2016-06',
-    endDate: '2019-02',
+    startDate: '2021-09',
+    endDate: '2021-11',
     current: false,
     description:
       'Developed custom web solutions for various clients across different industries.',
     achievements: [
-      'Delivered 20+ client projects on time and within budget',
-      'Introduced component-based architecture improving code reuse',
-      'Created internal tools saving 10 hours/week of manual work',
+      'Built features for a large-scale inventory management system using React and Redux Toolkit.',
+      'Gained hands-on experience with state management and scalable frontend architecture.',
     ],
-    technologies: ['JavaScript', 'React', 'PHP', 'MySQL', 'WordPress'],
+    technologies: ['JavaScript', 'React', 'Redux', 'SCSS', 'Git'],
   },
 
   // ---------------------------------------------------------------------------
@@ -232,12 +249,12 @@ export function getTotalYearsOfExperience(): number {
   const latestEnd = sortedByDate.some((exp) => exp.current)
     ? new Date()
     : new Date(
-        Math.max(
-          ...sortedByDate.map((exp) =>
-            exp.endDate ? new Date(exp.endDate).getTime() : 0
-          )
+      Math.max(
+        ...sortedByDate.map((exp) =>
+          exp.endDate ? new Date(exp.endDate).getTime() : 0
         )
-      );
+      )
+    );
 
   const years = Math.floor(
     (latestEnd.getTime() - earliestStart.getTime()) / (1000 * 60 * 60 * 24 * 365)
