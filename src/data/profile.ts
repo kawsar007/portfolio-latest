@@ -115,7 +115,10 @@ export const profile: Profile = {
   // PROFESSIONAL SUMMARY
   // Keep this concise: 2-4 sentences that capture who you are professionally
   // -------------------------------------------------------------------------
-  summary: `Results-driven software engineer with 8+ years of experience building scalable web applications. Passionate about clean code, performance optimization, and mentoring junior developers. Expert in React, TypeScript, and cloud architecture.`,
+  summary: `Software Engineer with 4+ years of experience building scalable, high performance web
+applications using React, Next.js, TypeScript, and Node.js. Proven expertise in real-time systems,
+healthcare platforms, e-commerce and enterprise applications. Strong collaborator with a passion for clean
+code, performance optimization, and delivering business-driven solutions.`,
 
   // -------------------------------------------------------------------------
   // KEY HIGHLIGHTS

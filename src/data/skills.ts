@@ -111,25 +111,25 @@ export const skills: Skill[] = [
     name: 'TypeScript',
     level: 95,
     category: 'Languages',
-    yearsOfExperience: 5,
+    // yearsOfExperience: 5,
   },
   {
     name: 'JavaScript',
     level: 95,
     category: 'Languages',
-    yearsOfExperience: 8,
+    // yearsOfExperience: 8,
   },
   {
     name: 'Python',
     level: 80,
     category: 'Languages',
-    yearsOfExperience: 4,
+    // yearsOfExperience: 4,
   },
   {
     name: 'Go',
     level: 65,
     category: 'Languages',
-    yearsOfExperience: 2,
+    // yearsOfExperience: 2,
   },
 
   // ---------------------------------------------------------------------------
@@ -139,25 +139,55 @@ export const skills: Skill[] = [
     name: 'React',
     level: 95,
     category: 'Frontend',
-    yearsOfExperience: 6,
+    // yearsOfExperience: 6,
   },
   {
     name: 'Next.js',
     level: 90,
     category: 'Frontend',
-    yearsOfExperience: 4,
+    // yearsOfExperience: 4,
+  },
+  {
+    name: 'Redux',
+    level: 80,
+    category: 'Frontend',
+    // yearsOfExperience: 2,
+  },
+  {
+    name: 'TanStack Query',
+    level: 80,
+    category: 'Frontend',
+    // yearsOfExperience: 2,
+  },
+  {
+    name: 'Zustand',
+    level: 80,
+    category: 'Frontend',
+    // yearsOfExperience: 2,
+  },
+  {
+    name: 'SCSS',
+    level: 90,
+    category: 'Frontend',
+    // yearsOfExperience: 3,
   },
   {
     name: 'Tailwind CSS',
     level: 90,
     category: 'Frontend',
-    yearsOfExperience: 3,
+    // yearsOfExperience: 3,
   },
   {
     name: 'Vue.js',
     level: 70,
     category: 'Frontend',
-    yearsOfExperience: 2,
+    // yearsOfExperience: 2,
+  },
+  {
+    name: 'Angular',
+    level: 60,
+    category: 'Frontend',
+    // yearsOfExperience: 2,
   },
 
   // ---------------------------------------------------------------------------
@@ -167,47 +197,53 @@ export const skills: Skill[] = [
     name: 'Node.js',
     level: 90,
     category: 'Backend',
-    yearsOfExperience: 6,
+    // yearsOfExperience: 6,
   },
   {
     name: 'Express',
     level: 88,
     category: 'Backend',
-    yearsOfExperience: 5,
+    // yearsOfExperience: 5,
   },
   {
-    name: 'Django',
+    name: 'NestJS',
     level: 75,
     category: 'Backend',
-    yearsOfExperience: 3,
+    // yearsOfExperience: 3,
   },
   {
     name: 'GraphQL',
-    level: 80,
+    level: 60,
     category: 'Backend',
-    yearsOfExperience: 3,
+    // yearsOfExperience: 3,
   },
 
   // ---------------------------------------------------------------------------
   // DATABASES
   // ---------------------------------------------------------------------------
   {
-    name: 'PostgreSQL',
+    name: 'MySQL',
     level: 85,
     category: 'Databases',
-    yearsOfExperience: 5,
+    // yearsOfExperience: 5,
   },
   {
     name: 'MongoDB',
     level: 80,
     category: 'Databases',
-    yearsOfExperience: 4,
+    // yearsOfExperience: 4,
+  },
+  {
+    name: 'Prisma ORM',
+    level: 80,
+    category: 'Databases',
+    // yearsOfExperience: 4,
   },
   {
     name: 'Redis',
-    level: 75,
+    level: 65,
     category: 'Databases',
-    yearsOfExperience: 3,
+    // yearsOfExperience: 3,
   },
 
   // ---------------------------------------------------------------------------
@@ -217,25 +253,25 @@ export const skills: Skill[] = [
     name: 'AWS',
     level: 85,
     category: 'Cloud',
-    yearsOfExperience: 4,
+    // yearsOfExperience: 4,
   },
   {
     name: 'Docker',
     level: 85,
     category: 'DevOps',
-    yearsOfExperience: 4,
+    // yearsOfExperience: 4,
   },
   {
     name: 'Kubernetes',
     level: 70,
     category: 'DevOps',
-    yearsOfExperience: 2,
+    // yearsOfExperience: 2,
   },
   {
     name: 'CI/CD',
     level: 85,
     category: 'DevOps',
-    yearsOfExperience: 4,
+    // yearsOfExperience: 4,
   },
 
   // ---------------------------------------------------------------------------
