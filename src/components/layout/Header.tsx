@@ -1,11 +1,11 @@
 'use client';
 
+import { Button } from '@/components/ui';
+import { cn } from '@/lib/utils';
+import { Download, Menu, X } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { Menu, X, Download } from 'lucide-react';
-import { Button } from '@/components/ui';
-import { profile } from '@/data/profile';
-import { cn } from '@/lib/utils';
 
 const navItems = [
   { href: '/#about', label: 'About' },
@@ -24,9 +24,10 @@ export function Header() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo / Name */}
-          <Link href="/" className="font-bold text-xl text-gray-900 dark:text-white">
+          {/* <Link href="/" className="font-bold text-xl text-gray-900 dark:text-white">
             {profile.name}
-          </Link>
+          </Link> */}
+          <Image alt='' src="/images/kawsar-logo.png" width={220} height={40} className="rounded-full" />
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
