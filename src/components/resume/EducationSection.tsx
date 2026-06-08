@@ -1,9 +1,9 @@
 'use client';
 
-import { motion } from 'framer-motion';
-import { GraduationCap, MapPin, Award } from 'lucide-react';
+import { Badge, Card, CardContent, Section } from '@/components/ui';
 import { education } from '@/data/education';
-import { Section, Badge, Card, CardContent } from '@/components/ui';
+import { motion } from 'framer-motion';
+import { Award, GraduationCap, MapPin } from 'lucide-react';
 
 export function EducationSection() {
   return (
@@ -25,7 +25,7 @@ export function EducationSection() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-gray-900 dark:text-white">
-                      {edu.degree} in {edu.field}
+                      {edu.degree} {edu.field}
                     </h3>
                     <p className="text-blue-600 dark:text-blue-400 font-medium">
                       {edu.school}

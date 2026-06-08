@@ -40,7 +40,7 @@ export interface Education {
    * Field of study
    * Examples: "Computer Science", "Business Administration", "Design"
    */
-  field: string;
+  field?: string;
 
   /** School/University name */
   school: string;
@@ -160,7 +160,7 @@ export const education: Education[] = [
   {
     id: 'edu-1',
     degree: 'BSc. in Computer Science & Engineering',
-    field: 'Computer Science',
+    // field: 'Computer Science',
     school: 'University of Development Alternative (UODA)',
     // schoolLogo: '/logos/stanford.png',  // Uncomment if you have a logo
     location: 'Dhanmondi, Dhaka',
@@ -181,7 +181,7 @@ export const education: Education[] = [
   {
     id: 'edu-2',
     degree: 'Higher Secondary Certificate (HSC)',
-    field: 'Science',
+    // field: 'Science',
     school: 'Bajitpur Govt College',
     location: 'Bajitpur, Kishoreganj',
     startYear: 2014,

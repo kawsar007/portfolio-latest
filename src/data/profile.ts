@@ -125,10 +125,12 @@ code, performance optimization, and delivering business-driven solutions.`,
   // 3-5 achievement statements with metrics when possible
   // -------------------------------------------------------------------------
   highlights: [
-    'Led development of platform serving 1M+ users',
-    'Reduced page load time by 60%',
-    'Managed team of 5 engineers',
-    'Speaker at 3 tech conferences',
+    'Developed scalable and high-performance web applications.',
+    'Integrated REST APIs and WebSocket-based real-time features.',
+    'Optimized application performance and improved user experience.',
+    'Delivered production-ready solutions with clean architecture.',
+    'Collaborated effectively across teams to ship quality products.',
+    'Built scalable and high-performance e-commerce platforms.',
   ],
 };
 
