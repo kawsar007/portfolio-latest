@@ -41,7 +41,7 @@ export interface Experience {
   /** Unique identifier (e.g., 'exp-1', 'exp-2') */
   id: string;
 
-  /** Job title (e.g., "Senior Software Engineer", "Product Manager") */
+  /** Job title (e.g., "Software Engineer", "Product Manager") */
   title: string;
 
   /** Company name */
@@ -121,7 +121,7 @@ export const experience: Experience[] = [
   // ---------------------------------------------------------------------------
   {
     id: 'exp-1',
-    title: 'Senior Software Engineer',
+    title: 'Software Engineer',
     company: 'Fleet MTS',
     // companyLogo: '/logos/techcorp.png',  // Uncomment and add logo if you have one
     location: 'Remote',

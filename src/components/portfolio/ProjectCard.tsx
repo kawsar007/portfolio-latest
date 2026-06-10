@@ -1,11 +1,12 @@
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { ExternalLink, Github, ArrowRight } from 'lucide-react';
-import { Badge, Button } from '@/components/ui';
+import { Badge } from '@/components/ui';
 import type { Project } from '@/data/projects';
+import { motion } from 'framer-motion';
+import { ArrowRight, ExternalLink, Github } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useState } from 'react';
 
 interface ProjectCardProps {
   project: Project;
@@ -28,11 +29,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-600 overflow-hidden">
         {/* Placeholder gradient - replace with actual image when available */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white/50 text-4xl font-bold">
+          {/* <span className="text-white/50 text-4xl font-bold">
             {project.title.substring(0, 2).toUpperCase()}
-          </span>
+          </span> */}
+          <Image alt={project.title} src={project.thumbnail} width={400} height={300} className="object-cover w-full h-full" />
         </div>
-        
+
         {/* Overlay on hover */}
         <motion.div
           initial={{ opacity: 0 }}

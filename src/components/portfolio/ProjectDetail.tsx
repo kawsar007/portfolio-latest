@@ -1,10 +1,11 @@
 'use client';
 
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { ArrowLeft, ExternalLink, Github, Calendar, User, CheckCircle } from 'lucide-react';
 import { Badge, Button, Card, CardContent } from '@/components/ui';
 import type { Project } from '@/data/projects';
+import { motion } from 'framer-motion';
+import { ArrowLeft, Calendar, CheckCircle, ExternalLink, Github, User } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 interface ProjectDetailProps {
   project: Project;
@@ -32,9 +33,10 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
             className="relative h-64 md:h-96 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl overflow-hidden mb-8"
           >
             <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-white/30 text-6xl font-bold">
+              {/* <span className="text-white/30 text-6xl font-bold">
                 {project.title.substring(0, 2).toUpperCase()}
-              </span>
+              </span> */}
+              <Image alt={project.title} src={project.thumbnail} width={800} height={600} className="object-cover w-full h-full" />
             </div>
           </motion.div>
 

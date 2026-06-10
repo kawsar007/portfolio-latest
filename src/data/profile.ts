@@ -29,7 +29,7 @@ export interface Profile {
   /** Full name as it should appear on the resume */
   name: string;
 
-  /** Professional title/headline (e.g., "Senior Software Engineer", "UX Designer") */
+  /** Professional title/headline (e.g., "Software Engineer", "UX Designer") */
   title: string;
 
   /**
@@ -97,7 +97,7 @@ export const profile: Profile = {
   // BASIC INFO (Required)
   // -------------------------------------------------------------------------
   name: 'Md Kawsar Mia',
-  title: 'Senior Software Engineer',
+  title: 'Software Engineer',
   photo: '/images/kawsar_profile.jpeg', // Set to '' to hide photo
   email: 'imkawsar007@gmail.com',
   location: 'Middle Badda, Dhaka, Bangladesh',

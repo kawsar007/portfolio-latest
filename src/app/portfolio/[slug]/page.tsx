@@ -1,8 +1,8 @@
-import { notFound } from 'next/navigation';
-import type { Metadata } from 'next';
-import { Container } from '@/components/ui';
 import { ProjectDetail } from '@/components/portfolio';
-import { projects, getProjectBySlug } from '@/data/projects';
+import { Container } from '@/components/ui';
+import { getProjectBySlug, projects } from '@/data/projects';
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
 interface ProjectPageProps {
   params: Promise<{ slug: string }>;
@@ -33,6 +33,8 @@ export async function generateMetadata({ params }: ProjectPageProps): Promise<Me
 export default async function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = await params;
   const project = getProjectBySlug(slug);
+
+  console.log('Project:', project);
 
   if (!project) {
     notFound();
