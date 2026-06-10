@@ -106,10 +106,10 @@ export const profile: Profile = {
   // CONTACT & SOCIAL (Optional - remove or set to undefined if not needed)
   // -------------------------------------------------------------------------
   phone: '+8801638600627',
-  website: 'https://kawsar.dev',
-  linkedin: 'https://linkedin.com/in/kawsar-mia',
-  github: 'https://github.com/kawsar-mia',
-  twitter: 'https://twitter.com/kawsar_mia',
+  website: 'https://kawsar-portfolio-latest.vercel.app/',
+  linkedin: 'https://www.linkedin.com/in/kawsar007/',
+  github: 'https://github.com/kawsar007',
+  twitter: 'https://twitter.com/kawsar007',
 
   // -------------------------------------------------------------------------
   // PROFESSIONAL SUMMARY
