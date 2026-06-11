@@ -233,24 +233,30 @@ management to enhance clinical efficiency and care quality.`,
   // ---------------------------------------------------------------------------
   {
     id: 'proj-3',
-    slug: 'analytics-dashboard',
-    title: 'DataViz Analytics Dashboard',
+    slug: 'teton-shop-ecommerce-platform',
+    title: 'Teton Shop',
     description:
-      'Interactive analytics dashboard with customizable charts and real-time data visualization.',
-    thumbnail: '/projects/analytics-thumb.jpg',
-    images: ['/projects/analytics-1.jpg', '/projects/analytics-2.jpg'],
-    technologies: ['React', 'D3.js', 'Python', 'FastAPI', 'PostgreSQL'],
-    category: 'Data Visualization',
+      'Interactive data visualization dashboard for business analytics and insights.',
+    longDescription:
+      'Led frontend development for a production-grade e-commerce platform, integrating secure APIs, implementing dynamic and reusable components, and translating Figma designs into responsive, optimized, and user-friendly interfaces.',
+    thumbnail: '/projects/teton-shop.png',
+    images: ['/projects/teton-shop-1.jpg', '/projects/teton-shop-2.jpg'],
+    technologies: ['Vue Js', 'Nuxt', 'Stylus CSS', 'JavaScript', 'Stripe', 'MySql', 'Laravel', 'JWT Authentication', 'REST APIs'],
+    category: 'Web Application',
     role: 'Frontend Lead',
-    duration: '3 months',
-    // liveUrl: undefined,  // No live demo
+    duration: '8 months',
+    liveUrl: 'https://bd.tetonshop.com/',
     // githubUrl: undefined,  // Private repository
     featured: true,
     highlights: [
-      '20+ chart types',
-      'Export to PDF/Excel',
-      'Custom report builder',
-      'Role-based access control',
+      'Product catalog and category management',
+      'Product search and browsing',
+      'Shopping cart and checkout flow',
+      'Customer account and order management',
+      'Order tracking',
+      'Promotional and campaign support',
+      'Responsive e-commerce experience across devices',
+      'Payment and delivery workflow integration',
     ],
   },
 
