@@ -323,6 +323,39 @@ management to enhance clinical efficiency and care quality.`,
       'Step By Step Guide: Receive step-by-step guidance for your business with Real Estate AI.',
     ],
   },
+  {
+    id: 'proj-6',
+    slug: 'builda-brain-ecommerce-platform',
+    title: 'Builda Brain',
+    description:
+      'Complete e-commerce solution for the Bangladesh market.',
+    longDescription: `Designed and developed a production-ready, full-stack e-commerce platform tailored for the Bangladesh market, featuring a RESTful backend API and a modern, mobile-first storefront with a complete admin management system.`,
+    thumbnail: '/projects/buildabrain.png',
+    images: ['/projects/buildabrain-1.jpg', '/projects/buildabrain-2.jpg'],
+    technologies: ['NestJS', 'Next.js 15', 'React 19', 'TypeScript', 'Prisma ORM', 'MySQL', 'Tailwind CSS', 'TanStack Query', 'Zustand', 'SSLCommerz', 'Cloudinary', 'JWT'],
+    category: 'Web Application',
+    role: 'Full Stack Developer',
+    duration: '2 months',
+    liveUrl: 'https://ecommerce-xi-eight-53.vercel.app/',  // CLI tools usually don't have live URLs
+    githubUrl: 'https://github.com/alexjohnson/devtoolkit',
+    featured: false,
+    highlights: [
+      'Architected a modular RESTful API with 11 feature modules (Auth, Products, Orders, Payments, Users, Cart, Wishlist, Reviews, Categories, Banners, Settings) following clean separation of concerns',
+      'Implemented JWT-based authentication with dual transport (HttpOnly cookies + Bearer tokens), access/refresh token rotation, and role-based access control across three tiers: USER, ADMIN, and SUPER_ADMIN',
+      'Integrated SSLCommerz payment gateway with full transaction lifecycle: payment initiation, success/failure/cancel callbacks, IPN webhook verification with MD5 hash validation, and idempotent payment record management',
+      'Built a silent guest checkout system that automatically creates user accounts in the background without interrupting the purchase flow, associating the order with the new account',
+      'Implemented Cloudinary media management for product images (multi-upload), category images, hero banners, and site logo with automatic cleanup on deletion',
+      'Applied global security layers including Helmet, CORS, rate limiting, input whitelisting via class-validator, and a global exception filter that sanitizes error responses in production',
+      'Designed the order lifecycle with enforced status transitions (PENDING → PROCESSING → SHIPPED → DELIVERED), automatic stock management, and cancellation with stock restoration',
+
+      'Built a mobile-first storefront using Next.js App Router with strategic use of Server Components for SEO-critical pages (product detail with ISR), dynamic OpenGraph metadata, and semantic HTML',
+      'Implemented a hybrid cart and wishlist system supporting both guest users (Zustand + localStorage) and authenticated users (server-synced), with automatic merge on login and cross-session isolation using user-scoped store keys',
+      'Developed a frictionless guest checkout flow: collects customer details, silently registers an account, merges the local cart into the server, places the order, and redirects to the SSLCommerz payment gateway — all in a single uninterrupted user action',
+      'Engineered a robust session management system with proactive JWT expiry detection on page load, automatic token refresh, atomic localStorage cleanup on logout, and redirect-safe force-logout to prevent infinite loading states',
+      'Designed a full admin panel with dashboard statistics, product CRUD with multi-image upload, inline category and banner management, order status workflow, user moderation, review approval, and site settings management',
+      'Applied production-grade state architecture: TanStack Query for all server state with cache invalidation strategies, Zustand with skipHydration + manual rehydration to eliminate SSR/hydration mismatches, and a SessionGuard component that detects and clears stale cross-user data on every page load'
+    ],
+  }
 
   // ---------------------------------------------------------------------------
   // ADD MORE PROJECTS HERE

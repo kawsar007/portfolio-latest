@@ -34,8 +34,6 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const { slug } = await params;
   const project = getProjectBySlug(slug);
 
-  console.log('Project:', project);
-
   if (!project) {
     notFound();
   }
