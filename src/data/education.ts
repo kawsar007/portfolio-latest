@@ -223,26 +223,26 @@ export const education: Education[] = [
 export const certifications: Certification[] = [
   {
     id: 'cert-1',
-    name: 'AWS Solutions Architect - Professional',
+    name: 'AWS Solutions Architect',
     issuer: 'Amazon Web Services',
     // issuerLogo: '/logos/aws.png',  // Uncomment if you have a logo
     date: '2023-06',
     expirationDate: '2026-06',
     credentialId: 'AWS-SAP-123456',
-    credentialUrl: 'https://aws.amazon.com/verification',
+    // credentialUrl: 'https://aws.amazon.com/verification',
   },
   {
     id: 'cert-2',
-    name: 'Google Cloud Professional Developer',
-    issuer: 'Google Cloud',
+    name: 'Getting Started with Docker',
+    issuer: 'Simplilearn SkillUp',
     date: '2023-01',
     expirationDate: '2025-01',
     credentialId: 'GCP-PD-789012',
   },
   {
     id: 'cert-3',
-    name: 'Certified Kubernetes Administrator',
-    issuer: 'Cloud Native Computing Foundation',
+    name: 'Think in a Redux Way',
+    issuer: 'Learn with Sumit',
     date: '2022-08',
     expirationDate: '2025-08',
     credentialId: 'CKA-345678',
