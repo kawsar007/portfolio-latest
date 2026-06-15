@@ -355,7 +355,87 @@ management to enhance clinical efficiency and care quality.`,
       'Designed a full admin panel with dashboard statistics, product CRUD with multi-image upload, inline category and banner management, order status workflow, user moderation, review approval, and site settings management',
       'Applied production-grade state architecture: TanStack Query for all server state with cache invalidation strategies, Zustand with skipHydration + manual rehydration to eliminate SSR/hydration mismatches, and a SessionGuard component that detects and clears stale cross-user data on every page load'
     ],
-  }
+  },
+  {
+    id: 'proj-7',
+    slug: 'vehicle-tracking-system',
+    title: 'Vehicle Tracking System (VTS)',
+    description:
+      'A real-time vehicle tracking mobile app for fleet owners and managers with live map visualization and role-based access.',
+    longDescription:
+      'VTS is a production-grade React Native application built with Expo that enables fleet owners and managers to monitor their vehicles in real time. The app features a role-based access system supporting vehicle_owner and manager roles — owners see their full fleet while managers see only their assigned vehicles. The core feature is a live tracking map that polls each vehicle\'s GPS location every 10 seconds and updates markers accordingly. Users can select any vehicle and enable Follow mode to keep the map centered on that vehicle as it moves. The app is built with a scalable, maintainable architecture using Zustand for state management, Axios with JWT interceptors for secure API communication, and NativeWind (Tailwind CSS) for a consistent, modern UI.',
+    thumbnail: '/projects/vts_app.png',
+    images: [
+      '/projects/vts-1.jpg',
+      '/projects/vts-2.jpg',
+      '/projects/vts-3.jpg',
+    ],
+    technologies: [
+      'React Native',
+      'Expo',
+      'TypeScript',
+      'Zustand',
+      'Axios',
+      'React Native Maps',
+      'NativeWind',
+      'Tailwind CSS',
+      'Expo Router',
+      'AsyncStorage',
+    ],
+    category: 'Mobile App',
+    role: 'Full Stack Mobile Developer',
+    duration: 'Client Project',
+    liveUrl: '',
+    githubUrl: '',
+    featured: true,
+    highlights: [
+      'Architected a scalable project structure with separated services, stores, types, hooks, and components for long-term maintainability',
+      'Implemented JWT-based authentication with secure token persistence using AsyncStorage and automatic header injection via Axios interceptors',
+      'Built role-based access control supporting vehicle_owner and manager roles, each with scoped vehicle visibility',
+      'Developed real-time GPS tracking map with 10-second auto-refresh polling using react-native-maps and interval-based location updates',
+      'Engineered a Follow Mode feature that keeps the map camera locked and animated to a selected vehicle\'s live position',
+      'Designed a centralized dual-API architecture to cleanly separate local backend and tracking backend requests',
+      'Applied Zustand stores per domain (auth, vehicles, locations) for predictable, decoupled global state management',
+      'Delivered a clean, professional UI with NativeWind (Tailwind CSS) including dynamic vehicle status badges, marker color coding by speed/engine state, and loading states',
+    ],
+  },
+  {
+    id: 'proj-8',
+    slug: 'trip-logger',
+    title: 'Reham Trip Logger Mobile App',
+    description: 'A mobile app to log, track, and export professional trip reports with offline-first SQLite storage.',
+    longDescription: 'Trip Logger is a React Native mobile application built with Expo that helps professionals record and manage their travel trips. Users can log trip details including destinations with auto-suggest, distance, duration via a native time picker, and notes. Trips are stored locally using SQLite for full offline support. The app supports date-range filtering, grouped trip history, PDF export for reports, and a complete user profile system — all wrapped in a clean, modern UI.',
+    thumbnail: '/projects/reham.png',
+    images: [
+      '/projects/trip-logger-1.jpg',
+      '/projects/trip-logger-2.jpg',
+      '/projects/trip-logger-3.jpg',
+    ],
+    technologies: [
+      'React Native',
+      'Expo',
+      'TypeScript',
+      'SQLite',
+      'React Navigation',
+      'expo-image-picker',
+      'expo-print',
+    ],
+    category: 'Mobile App',
+    role: 'Full Stack Mobile Developer',
+    duration: 'Personal Project',
+    liveUrl: '',   // Add if published to Play Store / App Store
+    githubUrl: '', // Add your repo URL
+    featured: false,
+    highlights: [
+      'Built offline-first architecture using expo-sqlite with full CRUD operations',
+      'Implemented smart destination auto-suggest by querying trip history in real time',
+      'Integrated native date & time pickers for a seamless, professional input experience',
+      'Designed PDF export feature that generates formatted trip reports with user profile branding',
+      'Built date-range filtering system with live trip count and grand total calculations',
+      'Architected nested stack + bottom tab navigation with profile-gated onboarding flow',
+      'Applied professional UI/UX patterns: progress indicators, avatar initials, loading states, and form validation',
+    ],
+  },
 
   // ---------------------------------------------------------------------------
   // ADD MORE PROJECTS HERE
