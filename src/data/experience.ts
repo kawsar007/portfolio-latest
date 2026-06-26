@@ -119,37 +119,37 @@ export const experience: Experience[] = [
   // ---------------------------------------------------------------------------
   // CURRENT POSITION (or most recent)
   // ---------------------------------------------------------------------------
-  {
-    id: 'exp-1',
-    title: 'Software Engineer',
-    company: 'Fleet MTS',
-    // companyLogo: '/logos/techcorp.png',  // Uncomment and add logo if you have one
-    location: 'Remote',
-    type: 'full-time',
-    startDate: '2026-03',
-    // endDate: undefined,  // Omit or undefined for current position
-    current: true,
-    description:
-      'Developed a role-based Vehicle Tracking System (VTS) that enables real-time monitoring and management of vehicles. The system supports multiple user roles, including Admin, Manager, and Owner, and provides live tracking, detailed analytics, real-time notifications, and a comprehensive admin panel for efficient fleet management.',
-    achievements: [
-      'Role-based access management (Admin, Manager, Owner, etc.) with customizable permissions and secure user control.',
-      'Real-time live vehicle location tracking with accurate GPS monitoring and instant map updates.',
-      'Individual vehicle tracking and follow mode for continuous monitoring of specific vehicles.',
-      'Real-time notification and alert system for overspeeding, geofence violations, ignition status, and critical events.',
-      'Centralized Admin Panel for efficient system configuration, user management, role assignment, and operational control.',
-      'Comprehensive vehicle reporting, including trip history, distance traveled, fuel usage, idle time, and performance analytics.'
-    ],
-    technologies: [
-      'React',
-      'Javascript',
-      'Tailwind CSS',
-      'Node.js',
-      'Express',
-      'MySQL',
-      'Prisma ORM',
-      'Docker',
-    ],
-  },
+  // {
+  //   id: 'exp-1',
+  //   title: 'Software Engineer',
+  //   company: 'Fleet MTS',
+  //   // companyLogo: '/logos/techcorp.png',  // Uncomment and add logo if you have one
+  //   location: 'Remote',
+  //   type: 'full-time',
+  //   startDate: '2026-03',
+  //   // endDate: undefined,  // Omit or undefined for current position
+  //   current: true,
+  //   description:
+  //     'Developed a role-based Vehicle Tracking System (VTS) that enables real-time monitoring and management of vehicles. The system supports multiple user roles, including Admin, Manager, and Owner, and provides live tracking, detailed analytics, real-time notifications, and a comprehensive admin panel for efficient fleet management.',
+  //   achievements: [
+  //     'Role-based access management (Admin, Manager, Owner, etc.) with customizable permissions and secure user control.',
+  //     'Real-time live vehicle location tracking with accurate GPS monitoring and instant map updates.',
+  //     'Individual vehicle tracking and follow mode for continuous monitoring of specific vehicles.',
+  //     'Real-time notification and alert system for overspeeding, geofence violations, ignition status, and critical events.',
+  //     'Centralized Admin Panel for efficient system configuration, user management, role assignment, and operational control.',
+  //     'Comprehensive vehicle reporting, including trip history, distance traveled, fuel usage, idle time, and performance analytics.'
+  //   ],
+  //   technologies: [
+  //     'React',
+  //     'Javascript',
+  //     'Tailwind CSS',
+  //     'Node.js',
+  //     'Express',
+  //     'MySQL',
+  //     'Prisma ORM',
+  //     'Docker',
+  //   ],
+  // },
 
   // ---------------------------------------------------------------------------
   // PREVIOUS POSITION
