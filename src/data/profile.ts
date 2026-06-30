@@ -115,10 +115,14 @@ export const profile: Profile = {
   // PROFESSIONAL SUMMARY
   // Keep this concise: 2-4 sentences that capture who you are professionally
   // -------------------------------------------------------------------------
-  summary: `Software Engineer with 4+ years of experience building scalable, high performance web
-applications using React, Next.js, TypeScript, and Node.js. Proven expertise in real-time systems,
-healthcare platforms, e-commerce and enterprise applications. Strong collaborator with a passion for clean
-code, performance optimization, and delivering business-driven solutions.`,
+
+  summary: `Software Engineer with 4+ years of experience designing and developing scalable web applications using React, Next.js, TypeScript, and Node.js. Skilled in building real-time systems, healthcare platforms, e-commerce applications, and enterprise solutions. Experienced in exploring AI-driven application development with Retrieval-Augmented Generation (RAG), LLM workflows, embeddings, vector databases, and AI-powered knowledge systems. Passionate about clean architecture, performance optimization, and creating impactful technology solutions.
+`,
+
+  //   summary: `Software Engineer with 4+ years of experience building scalable, high performance web
+  // applications using React, Next.js, TypeScript, and Node.js. Proven expertise in real-time systems,
+  // healthcare platforms, e-commerce and enterprise applications. Strong collaborator with a passion for clean
+  // code, performance optimization, and delivering business-driven solutions.`,
 
   // -------------------------------------------------------------------------
   // KEY HIGHLIGHTS

@@ -1,18 +1,17 @@
-import { Container } from '@/components/ui';
-import {
-  ProfileHeader,
-  Summary,
-  ExperienceTimeline,
-  SkillsSection,
-  EducationSection,
-  CertificationsSection,
-  LanguagesSection,
-} from '@/components/resume';
 import { ContactSection } from '@/components/contact';
 import { ProjectGrid } from '@/components/portfolio';
-import { Section } from '@/components/ui';
-import Link from 'next/link';
+import {
+  CertificationsSection,
+  EducationSection,
+  ExperienceTimeline,
+  LanguagesSection,
+  ProfileHeader,
+  SkillsSection,
+  Summary,
+} from '@/components/resume';
+import { Container, Section } from '@/components/ui';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 export default function HomePage() {
   return (
@@ -29,19 +28,10 @@ export default function HomePage() {
       {/* Skills Section */}
       <SkillsSection />
 
-      {/* Education Section */}
-      <EducationSection />
-
-      {/* Certifications Section */}
-      <CertificationsSection />
-
-      {/* Languages Section */}
-      <LanguagesSection />
-
       {/* Featured Projects */}
-      <Section 
-        id="portfolio-preview" 
-        title="Featured Projects" 
+      <Section
+        id="portfolio-preview"
+        title="Featured Projects"
         subtitle="A selection of my recent work"
       >
         <ProjectGrid featuredOnly limit={3} showFilters={false} />
@@ -55,6 +45,17 @@ export default function HomePage() {
           </Link>
         </div>
       </Section>
+
+      {/* Education Section */}
+      <EducationSection />
+
+      {/* Certifications Section */}
+      <CertificationsSection />
+
+      {/* Languages Section */}
+      <LanguagesSection />
+
+
 
       {/* Contact Section */}
       <ContactSection />
