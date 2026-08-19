@@ -161,8 +161,9 @@ export const experience: Experience[] = [
     location: 'Tropical Molla Tower, 15/4 Bir Uttam Rafiqul Islam Ave, Dhaka 1212',
     type: 'full-time',
     startDate: '2022-01',
-    endDate: '2026-02',
-    current: false,
+    // endDate: '2026-02',
+    // endDate: 'Present',
+    current: true,
     description: 'Full-stack development for a fast-growing SaaS platform.',
     achievements: [
       'Design, develop, and maintain scalable web applications using React, Next.js, TypeScript, Redux, and RTK Query.',
